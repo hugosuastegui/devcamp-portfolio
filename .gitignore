@@ -24,3 +24,6 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+
+# I don't want my secrets to load to version control
+/config/secrets.yml
