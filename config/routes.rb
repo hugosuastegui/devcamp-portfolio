@@ -1,7 +1,7 @@
 ## Creates alongside to the devise gem documentation
 
 Rails.application.routes.draw do
-  
+  ## path: '' ... is used to change routes. Previous was /users/sign_up
   devise_for :users, path: '', path_names: { sign_in: 'login', sign_out: 'logout', sign_up: 'register'}
   #get portfolio routes to change portfolios/:id to portoflio/:id in the show action. Rails knows when that when :id is a get route it is looking for params to pass to the show action
   resources :portfolios, expect: [:show]
