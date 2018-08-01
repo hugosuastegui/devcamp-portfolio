@@ -1,5 +1,8 @@
+## Creates alongside to the devise gem documentation
+
 Rails.application.routes.draw do
   
+  devise_for :users
   #get portfolio routes to change portfolios/:id to portoflio/:id in the show action. Rails knows when that when :id is a get route it is looking for params to pass to the show action
   resources :portfolios, expect: [:show]
   get 'portfolio/:id', to: 'portfolios#show', as: 'portfolio_show'
